@@ -7,7 +7,7 @@
     <version>1.0</version>
 
     <scm>
-        <developerConnection>scm:git:https://github.com/LMontsi/workerarchetype</developerConnection>
+        <developerConnection>scm:git:https://github.com/LMontsi/workerarchetype.git</developerConnection>
       <tag>workerarchetype-1.0</tag>
   </scm>
     <dependencies>
