@@ -1,0 +1,17 @@
+apiVersion: apps/v1beta1
+kind: Deployment
+metadata:
+  name: compliance-bankaccount-releasehold-v1
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: compliance-bankaccount-releasehold-v1
+    spec:
+      imagePullSecrets:
+      - name: hg-dockerhub-secret
+      containers:
+      - name: worker-camunda-passport-verification
+        image: docker.io/hgdockerza/camunda-worker:compliance-bankaccount-releasehold-v1
+        imagePullPolicy: Always

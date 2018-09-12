@@ -1,0 +1,34 @@
+<archetype xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype/1.0.0 http://maven.apache.org/xsd/archetype-1.0.0.xsd">
+    <id>worker-archetype</id>
+    <sources>
+        <source>src/main/java/application/controller/HelloController.java</source>
+        <source>src/main/java/application/controller/Client.java</source>
+        <source>src/main/java/application/configuration/Constants.java</source>
+        <source>src/main/java/application/configuration/ContextListener.java</source>
+        <source>src/main/java/application/App.java</source>
+    </sources>
+    <resources>
+        <resource>
+            src/main/resources/Application.properties
+        </resource>
+        <resource>
+            src/main/resources/log4j.properties
+        </resource>
+        <resource>
+            src/main/resources/kubernetes/deploy.sh
+        </resource>
+        <resource>
+            src/main/resources/kubernetes/kubernetes-deployment.yaml
+        </resource>
+        <resource>
+            src/main/resources/kubernetes/undeploy.sh
+        </resource>
+        <resource>
+            src/main/resources/kubernetes/update.sh
+        </resource>
+    </resources>
+    <testSources>
+        <source>src/test/java/AppTest.java</source>
+    </testSources>
+</archetype>
